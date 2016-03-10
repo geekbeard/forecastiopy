@@ -189,7 +189,7 @@ So, to get a more _human-sane_ format, you can do soething like this:
 ```python
 import datetime
 
-time = datetime.datetime.fromtimestamp(int(currently.time).strftime('%Y-%m-%d %H:%M:%S')
+time = datetime.datetime.fromtimestamp(int(currently.time)).strftime('%Y-%m-%d %H:%M:%S')
 print 'unix time:', currently.time
 print 'time:', time
 
